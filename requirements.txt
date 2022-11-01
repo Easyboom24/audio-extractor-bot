@@ -1,2 +1,2 @@
-aiogram
+aiogram>=2.22.2
 ffmpeg_python
