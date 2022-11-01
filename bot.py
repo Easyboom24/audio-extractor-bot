@@ -9,6 +9,8 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.contrib.middlewares.logging import LoggingMiddleware
 import streamlit as st
+from asyncio import new_event_loop, set_event_loop
+set_event_loop(new_event_loop())
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
