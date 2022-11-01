@@ -1,4 +1,4 @@
-from config import TOKEN
+#from config import TOKEN
 import ffmpeg
 import logging
 from aiogram import Bot, Dispatcher, executor, types
