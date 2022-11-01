@@ -8,11 +8,12 @@ from datetime import datetime
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.contrib.middlewares.logging import LoggingMiddleware
+import streamlit as st
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 # Initialize bot and dispatcher
-bot = Bot(token=TOKEN)
+bot = Bot(token=st.secrets["TOKEN"])
 
 dp = Dispatcher(bot, storage=MemoryStorage())
 dp.middleware.setup(LoggingMiddleware())
