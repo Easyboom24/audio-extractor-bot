@@ -106,5 +106,5 @@ async def get_all(message: types.Message, state: FSMContext, msg:  types.Message
         await msg.delete()
     await state.finish()
 
-if __name__ == '__main__':
-    executor.start_polling(dp, skip_updates=True)
+#if __name__ == '__main__':
+#    executor.start_polling(dp, skip_updates=True)
