@@ -1,0 +1,2 @@
+aiogram
+ffmpeg_python
